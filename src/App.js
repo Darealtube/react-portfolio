@@ -9,9 +9,8 @@ function App() {
   return (
     <div>
 
-    <div id="wrap">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <div className="first">
-    <div className="bg"></div>
       <span className="intro">
       <FontAwesomeIcon id="grin" icon={faGrinStars}/> <br/><br/>
       <h1>Hey! Welcome.</h1>
@@ -20,15 +19,12 @@ function App() {
     </div>
 
     <div className="second">
-    <div className="bg2"></div>
       <span className="about">
-
-      <img src={require('./images/darryl2.png')} width="180" height="180"/>
+      <img src={require('./images/darryl2.png')} width="50" height="50"/>
       <br/><br/>
       <h1>About Me:</h1>
       <p>{abouts}</p>
       </span>
-    </div>
     </div>
 
     </div>
