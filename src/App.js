@@ -38,9 +38,19 @@ function App() {
       </span>
     </div>
 
-    <div id="#proj" className="projects">
-      <span className="projects">
+    <div id="proj">
+    <span className="row justify-content-around">
+      <div className="col-xs-4 con">LOL</div>
+    <span>  <div className="con col-xs-2 offset-md-4">LOL</div> </span>
+    <span><div className="con col-xs-2 offset-md-8">LOL</div></span>
       </span>
+
+      <span className="row justify-content-around">
+        <div className="col-xs-4 con2">LOL</div>
+      <span>  <div className="con2 col-xs-2 offset-md-4">LOL</div> </span>
+      <span><div className="con2 col-xs-2 offset-md-8">LOL</div></span>
+      </span>
+
     </div>
 
 </div>
