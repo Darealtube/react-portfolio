@@ -39,17 +39,21 @@ function App() {
     </div>
 
     <div id="proj">
-    <span className="row justify-content-around">
-      <div className="col-xs-4 con">LOL</div>
-    <span>  <div className="con col-xs-2 offset-md-4">LOL</div> </span>
-    <span><div className="con col-xs-2 offset-md-8">LOL</div></span>
+    <h1 className="proj">Projects</h1><br/>
+    <span className="row">
+      <div className="col-xs-4 con"> <img src={require('./images/Calculator.png')} className="img-responsive fit-image"/><div className="card" style={{width:"inherit"}}>LOL</div> </div>
+    <span>  <div className="con col-xs-4 mx-4"> <img src={require('./images/Pomodoro.png')} className="img-responsive fit-image"/><div className="card" style={{width:"inherit"}}>LOL</div> </div> </span>
+    <span><div className="con col-xs-4"> <img src={require('./images/dr.png')} className="img-responsive fit-image"/><div className="card" style={{width:"inherit"}}>LOL</div>                                </div></span>
       </span>
 
-      <span className="row justify-content-around">
-        <div className="col-xs-4 con2">LOL</div>
-      <span>  <div className="con2 col-xs-2 offset-md-4">LOL</div> </span>
-      <span><div className="con2 col-xs-2 offset-md-8">LOL</div></span>
+      <span className="row">
+        <div className="col-xs-4 con2"> <img src={require('./images/im1.png')} className="img-responsive fit-image"/><div className="card" style={{width:"inherit"}}>LOL</div> </div>
+      <span>  <div className="con2 col-xs-4 mx-4"> <img src={require('./images/mar2.png')} className="img-responsive fit-image"/><div className="card" style={{width:"inherit"}}>LOL</div>   </div> </span>
+      <span><div className="con2 col-xs-4">  <img src={require('./images/this.png')} className="img-responsive fit-image"/><div className="card" style={{width:"inherit"}}>LOL</div> </div></span>
       </span>
+    </div>
+
+    <div id="link">
 
     </div>
 
