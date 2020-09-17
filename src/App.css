@@ -160,8 +160,60 @@ border-radius: 10%;
   height: 100vh;
   width: 100vw;
   color: black;
-  text-align: center;
+  align-items: center;
 }
+
+#link h1{
+  text-align: center;
+  position: relative;
+  bottom: 4rem;
+  font-size: 65px;
+}
+
+.linkz{
+  position: relative;
+  top: 2rem;
+}
+
+.fb{
+  font-size: calc(100% + 2vw + 2vh);
+  height: 10vh;
+  width: 30vw;
+}
+
+.twt{
+  font-size: calc(100% + 2vw + 2vh);
+  height: 10vh;
+  width: 30vw;
+}
+
+.disc{
+  font-size: calc(100% + 2vw + 2vh);
+  height: 10vh;
+  width: 30vw;
+}
+
+
+#icon{
+  margin-left: 1rem;
+}
+
+.fb:hover{
+  align-items: flex-start;
+  background: linear-gradient(85deg, #a8dadc, #457b9d);
+}
+
+.twt:hover{
+  align-items: flex-start;
+  background: linear-gradient(85deg, #64dfdf, #80ffdb);
+}
+
+.disc:hover{
+  align-items: flex-start;
+  background: linear-gradient(85deg, #8d99ae, #2b2d42);
+}
+
+
 
 
 
