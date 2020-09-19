@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faGrinStars} from '@fortawesome/free-regular-svg-icons'
+import {faGrinStars, faHeart} from '@fortawesome/free-regular-svg-icons'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -59,12 +59,12 @@ function App() {
 
     <div id="link">
       <h1>Contact Me!</h1>
-      <span className="row">
-        <div className="col-xs-4 fb" id="fb"><FontAwesomeIcon id="icon" icon={['fab', 'facebook']}/><span id="linktext">Darryl Javier</span></div>
-      <span> <div className="col-xs-4 twt mx-2 text-left" id="twt"><FontAwesomeIcon id="icon" icon={['fab', 'twitter']}/><span id="linktext"> @therealjavierr</span></div></span>
-      <span> <div className="col-xs-4 disc text-left" id="disc"><FontAwesomeIcon id="icon" icon={['fab', 'discord']}/><span id="linktext">Darealtube#1152</span></div></span>
+      <span className="row link">
+        <a href="https://www.facebook.com/darryl.javier.5/"><div className="col-xs-4 fb" id="fb"><FontAwesomeIcon id="icon" icon={['fab', 'facebook']}/><span id="linktext">Darryl Javier</span></div></a>
+      <a href="https://twitter.com/therealjavierr"><span> <div className="col-xs-4 twt mx-2 text-left" id="twt"><FontAwesomeIcon id="icon" icon={['fab', 'twitter']}/><span id="linktext"> @therealjavierr</span></div></span></a>
+      <a href="https://github.com/Darealtube"><span> <div className="col-xs-4 disc text-left" id="disc"><FontAwesomeIcon id="icon" icon={['fab', 'github']}/><span id="linktext">Darealtube</span></div></span></a>
       </span>
-       <h3 id="outro">Made with love</h3>
+       <h3 id="outro">Made with <FontAwesomeIcon icon={faHeart}/> by Darryl Javier</h3>
     </div>
 
 </div>
