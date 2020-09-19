@@ -108,14 +108,29 @@ div{
   width: 25vw;
   text-decoration: none;
   font-size: 17px;
-  outline: none;
 }
 
+.nav a:link {
+    text-decoration:none;
+    color: white;
+}
+
+
+.nav a:visited {
+    text-decoration:none;
+    color: white;
+}
+
+.nav a:hover {
+    text-decoration:none;
+    color: black;
+    background: linear-gradient(85deg, #e9ecef, #dee2e6);
+}
 
 .nav a:active {
-  background-color: #0077b6;
+    text-decoration:none;
+    color: white;
 }
-
 
 #proj{
   background: url('images/code.jpg') no-repeat center center;
@@ -134,6 +149,8 @@ div{
   background: white;
   width:  25vw;
   height: 25vh;
+  transform: scale(1);
+  transition: all .5s;
 }
 
 .con2{
@@ -141,6 +158,24 @@ div{
   background: white;
   width:  25vw;
   height: 25vh;
+  transform: scale(1);
+  transition: all .5s;
+}
+
+.con:hover{
+  transform: scale(1.1);
+  transition: all .5s;
+}
+
+.con2:hover{
+  transform: scale(1.1);
+  transition: all .5s;
+}
+
+
+.card{
+  font-weight: 500;
+  background: linear-gradient(85deg, #f1faee, #a8dadc);
 }
 
 .proj{
@@ -188,6 +223,8 @@ padding: .5rem 6vh .5rem;
   height: 10vh;
   width: 30vw;
   flex-direction: row;
+  transform: scale(1);
+  transition: all .5s;
 }
 
 .twt{
@@ -195,6 +232,8 @@ padding: .5rem 6vh .5rem;
   height: 10vh;
   width: 30vw;
   flex-direction: row;
+  transform: scale(1);
+  transition: all .5s;
 }
 
 .disc{
@@ -202,6 +241,8 @@ padding: .5rem 6vh .5rem;
   height: 10vh;
   width: 30vw;
   flex-direction: row;
+  transform: scale(1);
+  transition: all .5s;
 }
 
 
@@ -219,6 +260,9 @@ padding: .5rem 6vh .5rem;
   justify-content: flex-start;
   background: linear-gradient(85deg, #a8dadc, #457b9d);
   font-size: calc(100% + 1.5vw + 1.5vh);
+  -webkit-box-shadow: 10px 10px 21px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 21px 1px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 21px 1px rgba(0,0,0,0.75);
 }
 
 .fb:hover #linktext{
@@ -229,6 +273,9 @@ padding: .5rem 6vh .5rem;
 .twt:hover{
   justify-content: flex-start;
   background: linear-gradient(85deg, #ade8f4, #ade8f4);
+  -webkit-box-shadow: 10px 10px 21px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 21px 1px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 21px 1px rgba(0,0,0,0.75);
 }
 
 .twt:hover #linktext{
@@ -247,6 +294,9 @@ padding: .5rem 6vh .5rem;
 .disc:hover{
   justify-content: flex-start;
   background: linear-gradient(85deg, #8d99ae, #2b2d42);
+  -webkit-box-shadow: 10px 10px 21px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 21px 1px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 21px 1px rgba(0,0,0,0.75);
 }
 
 .disc:hover #linktext{
@@ -254,7 +304,29 @@ padding: .5rem 6vh .5rem;
   text-align: center;
 }
 
+.link a:link {
+    text-decoration:none;
+    color: inherit;
+}
+
+.link a:visited {
+    text-decoration:none;
+    color: inherit;
+}
+
+.link a:hover {
+    text-decoration:none;
+    color: inherit;
+}
+
+.link a:active {
+    text-decoration:none;
+    color: inherit;
+}
+
+
 #outro{
+  text-align: center;
   position: relative;
   top: 6rem;
 }
@@ -264,11 +336,12 @@ padding: .5rem 6vh .5rem;
 
 /* Media Queries */
 
-/* Tablet and Above */
+
+/* Tablet and Above Portrait */
 @media all and (max-width: 768px){
 
   .nav a{
-    font-size: 25px;
+    font-size: .5rem;
   }
 
   .card{
@@ -315,9 +388,16 @@ padding: .5rem 6vh .5rem;
 
 }
 
+
+
 /*Tablet and Above Landscape */
 
 @media all and (max-width: 1024px) and (orientation: landscape){
+
+
+  .nav a{
+    font-size: 1.5rem;
+  }
 
   #darpic{
   width: 20vw;
@@ -362,7 +442,7 @@ padding: .5rem 6vh .5rem;
   }
 
   .intro-wrapper h2{
-    font-size: 60px;
+    font-size: 50px;
   }
 
   #darpic{
@@ -403,7 +483,6 @@ padding: .5rem 6vh .5rem;
     font-size: calc(50% + .1vw + .1vh);
   }
 
-
   .disc{
     flex-direction: column;
   }
@@ -414,10 +493,88 @@ padding: .5rem 6vh .5rem;
 }
 
 
+@media all and (min-width: 1440px){
+  .nav a{
+    font-size: 2rem;
+  }
+
+  #darpic{
+    width: 15vw;
+  }
+  .con2{
+    position: relative;
+    top: 4rem;
+  }
+  .card{
+    font-size: 25px;
+  }
+}
+
+@media all and (min-width: 2560px){
+  #darpic{
+    width: 10vw;
+  }
+
+  .intro-wrapper h1{
+    font-size: 60px;
+  }
+
+  .intro-wrapper h2{
+    font-size: 50px;
+  }
+
+  .about p{
+    font-size: 3rem;
+  }
+
+  .card{
+    font-size: 2rem;
+  }
+}
+
+
+
 
 
 /* MOBILE L and Below */
 @media all and (max-width: 420px){
+
+  .nav a{
+    font-size: 1rem;
+  }
+
+  .intro-wrapper h1{
+    font-size: 30px;
+  }
+
+  .intro-wrapper h2{
+    font-size: 20px;
+  }
+
+  #darpic{
+    width: 40vw;
+  }
+
+  .about h1{
+    font-size: 50px;
+  }
+
+  .about p{
+    position: relative;
+    bottom: 2rem;
+    font-size: 18px;
+  }
+
+  .con2{
+    position: relative;
+    top: 4rem;
+  }
+
+  .card{
+    font-size: 15px;
+  }
+
+
   .fb{
     flex-direction: column;
   }
@@ -445,8 +602,44 @@ padding: .5rem 6vh .5rem;
 }
 
 
+/* MOBILE L and Below Landscape */
+@media all and (max-width: 812px) and (orientation: landscape){
 
-@media all and (max-width: 740px) and (orientation: landscape){
+  .nav a{
+    font-size: 1rem;
+  }
+
+  .intro-wrapper h1{
+    font-size: 30px;
+  }
+
+  .intro-wrapper h2{
+    font-size: 25px;
+  }
+
+  #darpic{
+  width: 15vw;
+  }
+
+  .about h1{
+    font-size: 2rem;
+  }
+
+  .about p{
+    position: relative;
+    bottom: 2rem;
+    font-size: 1rem;
+  }
+
+  .card{
+    font-size: 10px;
+  }
+
+  .row{
+    position: relative;
+    bottom: 1.5rem;
+  }
+
   .fb{
     flex-direction: row;
   }
@@ -470,5 +663,85 @@ padding: .5rem 6vh .5rem;
 
   .disc:hover #linktext{
     font-size: calc(45% + .1vw + .1vh);
+  }
+}
+
+@media all and (min-width: 540px) and (max-width: 541px){
+  .con2{
+    position: relative;
+    top: 2rem;
+  }
+  .nav a{
+    font-size: 1rem;
+  }
+
+  .intro-wrapper h1{
+    font-size: 30px;
+  }
+
+  .intro-wrapper h2{
+    font-size: 25px;
+  }
+
+  .about h1{
+    font-size: 2rem;
+  }
+
+  .about p{
+    font-size: 1rem;
+  }
+
+  .con2{
+    position: relative;
+    top: 4rem;
+  }
+}
+
+@media all and (min-width: 280px) and (max-width: 540px){
+  .card{
+    font-size: 12px;
+  }
+}
+
+@media all and (min-width: 560px) and (max-width: 823px){
+  .con2{
+    position: relative;
+    top: 2rem;
+  }
+
+}
+
+
+
+
+/* Iphone 5, Galaxy Fold, Moto G4, Galaxy S5  Landscape*/
+
+@media all and (max-width: 655px) and (orientation: landscape){
+  #darpic{
+    width: 10vw;
+  }
+
+  .proj{
+    position: relative;
+    bottom: 1rem;
+    width: 8rem;
+    height: 2.5rem;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .row{
+    position: relative;
+    bottom: 4rem;
+  }
+
+
+  .link{
+    bottom: 2rem;
+  }
+
+  #outro{
+    position: relative;
+    top: 2rem;
   }
 }
