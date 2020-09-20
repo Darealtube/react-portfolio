@@ -6,7 +6,6 @@ import { fab } from '@fortawesome/free-brands-svg-icons'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {abouts} from './texts/texts.js';
-import {$} from 'jquery';
 library.add(fab);
 
 function App() {
@@ -37,7 +36,7 @@ function App() {
     <br/>
       <span className="about">
       <h1>About Me:</h1>
-      <br/><br/>
+      <br/>
       <p>{abouts}</p>
       </span>
     </div>
@@ -45,15 +44,15 @@ function App() {
     <div id="proj">
     <h1 className="proj">Projects</h1><br/>
     <span className="row">
-      <div className="col-xs-4 con"> <img alt="React Hook Calculator" src={require('./images/Calculator.png')} className="img-responsive fit-image"/><div className="card" style={{width:"inherit"}}>React Hook Calculator</div> </div>
-    <span>  <div className="con col-xs-4 mx-4"> <img alt="React Hook Pomodoro" src={require('./images/Pomodoro.png')} className="img-responsive fit-image"/><div className="card" style={{width:"inherit"}}>React Hook Pomodoro Clock</div> </div> </span>
-    <span><div className="con col-xs-4"> <img alt="React Hook Drum Pad" src={require('./images/dr.png')} className="img-responsive fit-image"/><div className="card" style={{width:"inherit"}}>React Hook Drum Pad</div>                                </div></span>
+  <a href="https://github.com/Darealtube/React-Calculator">    <div className="col-xs-4 con"> <img alt="React Hook Calculator" src={require('./images/Calculator.png')} className="img-responsive fit-image"/><div className="card" style={{width:"inherit"}}>React Hook Calculator</div> </div> </a>
+  <a href="https://github.com/Darealtube/react-pomodoro">  <span>  <div className="con col-xs-4 mx-4"> <img alt="React Hook Pomodoro" src={require('./images/Pomodoro.png')} className="img-responsive fit-image"/><div className="card" style={{width:"inherit"}}>React Hook Pomodoro Clock</div> </div> </span> </a>
+  <a href="https://github.com/Darealtube/React-drumpad">  <span><div className="con col-xs-4"> <img alt="React Hook Drum Pad" src={require('./images/dr.png')} className="img-responsive fit-image"/><div className="card" style={{width:"inherit"}}>React Hook Drum Pad</div>                                </div></span> </a>
       </span>
 
       <span className="row">
-        <div className="col-xs-4 con2"> <img alt="React Hook Quote Machine" src={require('./images/im1.png')} className="img-responsive fit-image"/><div className="card" style={{width:"inherit"}}>React Hook Quote Machine</div> </div>
-      <span>  <div className="con2 col-xs-4 mx-4"> <img alt="React Hook Markdown Previewer" src={require('./images/mar2.png')} className="img-responsive fit-image"/><div className="card" style={{width:"inherit"}}>React Hook Markdown Previewer</div>   </div> </span>
-      <span><div className="con2 col-xs-4">  <img alt="This website" src={require('./images/this.png')} className="img-responsive fit-image"/><div className="card" style={{width:"inherit"}}>This Portfolio on Github</div> </div></span>
+    <a href="https://github.com/Darealtube/react-QuoteMachine">    <div className="col-xs-4 con2"> <img alt="React Hook Quote Machine" src={require('./images/im1.png')} className="img-responsive fit-image"/><div className="card" style={{width:"inherit"}}>React Hook Quote Machine</div> </div> </a>
+  <a href="https://github.com/Darealtube/react-markdown">    <span>  <div className="con2 col-xs-4 mx-4"> <img alt="React Hook Markdown Previewer" src={require('./images/mar2.png')} className="img-responsive fit-image"/><div className="card" style={{width:"inherit"}}>React Hook Markdown Previewer</div>   </div> </span> </a>
+  <a href="https://github.com/Darealtube/react-portfolio">    <span><div className="con2 col-xs-4">  <img alt="This website" src={require('./images/this.png')} className="img-responsive fit-image"/><div className="card" style={{width:"inherit"}}>This Portfolio on Github</div> </div></span> </a>
       </span>
     </div>
 
