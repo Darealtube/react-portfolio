@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import { Helmet } from 'react-helmet'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faGrinStars, faHeart} from '@fortawesome/free-regular-svg-icons'
 import { fab } from '@fortawesome/free-brands-svg-icons'
@@ -13,6 +14,10 @@ function App() {
 
   return (
     <div>
+    <Helmet>
+      <title>Dareal Portfolio</title>
+    </Helmet>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <div className="nav" id="nav">
     <a href="#home" data-scroll="home">Home</a>
